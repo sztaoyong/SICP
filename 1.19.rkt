@@ -2,7 +2,7 @@
 ;; R2 -> R2 linear transformation; can be represented by 2x2 matrix.
 ;; 
 ;; Tpq = [p + q, q; q, p]
-;; Tp'q' = [(p + q)^2 + q^2, q(2p + q); q(2p + q), q(2p + q)]
+;; Tp'q' = [(p + q)^2 + q^2, q(2p + q); q(2p + q), q^2 + p^2]
 
 ;; it not difficult to get
 ;; p' = p^2 + q^2 and q' = q*(2p + q)
