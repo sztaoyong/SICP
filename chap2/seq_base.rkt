@@ -4,6 +4,7 @@
 (provide filter)
 (provide accumulate)
 (provide accumulate-n)
+(provide flatmap)
 
 (define nil '())
 
@@ -26,3 +27,8 @@
       nil
       (cons (accumulate op init (map car seqs))
             (accumulate-n op init (map cdr seqs)))))
+
+
+
+(define (flatmap proc seq)
+  (accumulate append nil (map proc seq)))
